@@ -1,0 +1,8 @@
+h1 {
+    margin-bottom: 0px;
+}
+
+.right { float: right; }
+.left { float:left; }
+
+input { width: 100%; }
