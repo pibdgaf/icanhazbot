@@ -4,7 +4,7 @@ var socket = io.connect(window.location.host);
 
 socket.on('connected', function(data)
 {
-    $('.status').html('Connected');
+    console.log('connected...');
 });
 
 socket.on('error', function(data)
@@ -12,7 +12,7 @@ socket.on('error', function(data)
     console.log(data);
 });
 
-socket.on('parsed', function(packet)
+socket.on('response', function(data)
 {
-    console.log(packet);
+    console.log(data);
 });
